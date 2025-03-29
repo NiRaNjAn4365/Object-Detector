@@ -1,0 +1,5 @@
+This project is a real-time object detection application built using Android Jetpack Compose and TensorFlow Lite (TFLite). It leverages CameraX for live video streaming and captures frames to perform object detection using a pre-trained SSD MobileNet model. The app efficiently detects and classifies objects in real-time, displaying accurate bounding boxes and confidence scores directly on the camera feed.
+
+The detection pipeline uses ImageAnalysis to process frames, converts them to bitmaps, and applies a TensorFlow Lite model for classification. Implementing YUV to RGB conversion ensures seamless image preprocessing. The bounding boxes and labels are rendered using Canvas in Jetpack Compose, providing an intuitive and dynamic visual representation of detected objects.
+
+This application demonstrates a practical implementation of edge AI using TensorFlow Lite for on-device machine learning, ensuring privacy and reducing latency. It also features optimized model loading with minimal memory consumption using TFLite Task Library. Users can monitor real-time object detection performance with labels indicating object names and detection confidence scores.
